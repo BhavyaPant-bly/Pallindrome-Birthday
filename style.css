@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+:root {
+    --primary-color:#c2bec0;
+    --sec-color:#1d2125;
+    --ter-color:white;
+}
+body{
+    margin:0px;
+}
+.main{
+    padding:1rem;
+}
+h1{
+    
+    font-size: 300%;
+}
+h2, h3{
+ font-weight: bold;
+}
+
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: var(--ter-color);
+    transition:1s;
+}
+.primary-link{
+    background-color: var(--sec-color);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+#click{
+    background-color: var(--sec-color);
+    color: var(--ter-color);
+    height:30px;
+    border-radius: 0.5rem;
+}
+#date{
+    height:30px;
+    width:30%;
+    border-radius: 0.5rem;
+}
+
+#image{
+    display:none;
+}
+#image img {
+    
+    max-width: 30%;                             /*I have to see this */
+    height: auto;
+    text-align: center;
+    padding-top:3rem;
+}
+.space-top{
+    padding-top:7rem
+}
+.footer{
+    text-align: center ;
+    padding-bottom: 2.5rem;
+    color:var(--ter-color);
+    background-color:var(--sec-color);
+    padding-top: 2rem;
+    margin:0px;
+    font-size: 150%;
+    /* border-top-left-radius: 0.5rem; */
+    /* border-top-right-radius:0.5rem; */
+}
+.footer a:hover{
+      /* font-weight: bolder;  */
+    color:cadetblue
+}
+#checkdate{
+    font-size:150%;
+    font-weight: bold;
+    text-align: center;
+}
+.png img{
+    width:90%;
+}
+#toggle{
+  height:0;
+  width:0;
+  visibility:hidden;
+}
+
+label{
+    cursor:pointer;
+    text-indent:-9999px;
+    width:52px;
+    height:27px;
+    background:var(--sec-color);
+    float:right;
+    border-radius:100px;
+    position:relative;
+}
+label:after {
+    content:'';
+    position:absolute;
+    top:3px;
+    left:3px;
+    width:20px;
+    height:20px;
+    background:var(--ter-color);
+    border-radius:90px;
+    transition:0.3s;
+}
+
+input:checked+label {
+    background:var(--primary-color);
+
+}
+input:checked + label:after{
+    left:calc(100%-1px);
+    transform:translate(100%);
+}
+label:active:after{
+    width:20px;
+}
+
+.container{
+    background-color:var(--primary-color) ;
+}
+.container-center {
+    max-width :600px;
+    margin: auto
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pallindrome</title>
+    <script src="Pal.js" type="text/javascript"></script>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container container-center" id="theme">
+    <div class="main">
+    <input type="checkbox" onchange="ChangeTheme()" id="toggle"><label for="toggle">Toggle</label>
+    <h1 >Check if Your Birthday is a Pallindrome or Not</h1>
+    <h2>Enter your birthdate in the given box below and Find out!!</h2>
+    <a href="#date" class="link primary-link">Let's Go</a>
+    <div style="padding:5rem"></div>
+    <div class="png"><img src="birthday.svg"/></div>
+    <div style="padding:5rem"></div>
+    <h3>We are checking in the formats dd-mm-yyyy,mm-dd-yyyy,mm-dd-yy and m-dd-yyyy</h3>
+    <form onsubmit="event.preventDefault(), DelayCheck()">
+    <input type="date" id="date" required>
+    <input type="submit" value="check" id="click">
+    </form>
+    <br>
+    <div id="image" style="text-align: center;"><img src="RPs9.gif"/></div>
+    <div id="checkdate"></div>
+    </div>
+    <div class="space-top"></div>
+    <div id="footer" class="footer">@Connect
+        <br><br>
+            <a class="link " href="https://www.linkedin.com/in/bhavya-pant09/">linkedin</a>
+            <a class="link " href="https://github.com/BhavyaPant-bly">github</a>
+            <a class="link " href="https://www.instagram.com/dodo.8121/">instagram</a>
+    </div>
+</div>
+</body>
+</html>
